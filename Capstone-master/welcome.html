@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-10" />
+    <title>Welcome</title>
+</head>
+<body>
+        <h1>Welcome to Lec-Game Lite</h1>
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            Please indicate whether you are a student or a lecturer<br><br>
+            <input type="button" onclick="checkStudent(this.form)" value="Student"/> <!--<input type="radio" name="table" value="Students" checked> Student<br> --> 
+            <input type="button" onclick="checkLecturer(this.form)" value="Lecturer"/> <!--<input type="radio" name="table" value="Lecturers"> Lecturer<br> --> 
+            <input type="button" onclick="newAccount(this.form)" value="New"/>
+            
+            <br><br><br>
+            If you are a new user, a new account with this user id and password will be created.<br>
+            If not, you will be logged into your account.<br>
+        	<h3>User ID </h3> (UPPER CASE)<br> 
+        	<input type="text" name="userid" value="">
+        	<br><br><br>
+        	<h3>Password</h3><br>
+        	<input type="text" name="password" value="">
+        	<br><br><br>
+        	<input type="submit" value="Submit">   
+        </form>
+
+    
+</body>
+</html>
+
